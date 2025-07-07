@@ -50,7 +50,7 @@ const FeaturedAgent = () => {
           <div className="relative">
             <div className="aspect-square bg-gradient-to-br from-blue-100 to-blue-200 rounded-2xl overflow-hidden">
               <img
-                src="/src/assets/client.jpg"
+                src="/client.jpg"
                 alt="Saad Khan - NTX Realtors Group"
                 className="w-full h-full object-cover"
               />
