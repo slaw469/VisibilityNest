@@ -5,6 +5,7 @@ import { SITE } from '../site.config';
 const HeroSection = () => {
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
   const [videosLoaded, setVideosLoaded] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   const videos = [
     'https://videos.pexels.com/video-files/3571264/3571264-uhd_2560_1440_30fps.mp4',
@@ -14,12 +15,27 @@ const HeroSection = () => {
   ];
 
   useEffect(() => {
+    // Check if device is mobile
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
+  useEffect(() => {
+    // Only cycle videos on desktop
+    if (isMobile) return;
+    
     const interval = setInterval(() => {
       setCurrentVideoIndex((prevIndex) => (prevIndex + 1) % videos.length);
     }, 10000);
 
     return () => clearInterval(interval);
-  }, [videos.length]);
+  }, [videos.length, isMobile]);
 
   const handleBookCall = () => {
     window.open(SITE.calendly, '_blank', 'noopener,noreferrer');
@@ -27,10 +43,10 @@ const HeroSection = () => {
 
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Static Background Image - Shows First */}
+      {/* Static Background Image - Shows on mobile or while videos load on desktop */}
       <div 
         className={`absolute inset-0 bg-cover bg-center transition-opacity duration-700 ${
-          videosLoaded ? 'opacity-0' : 'opacity-100'
+          isMobile || !videosLoaded ? 'opacity-100' : 'opacity-0'
         }`} 
         style={{ 
           zIndex: 0,
@@ -38,8 +54,8 @@ const HeroSection = () => {
         }} 
       />
 
-      {/* Multiple Background Videos */}
-      {videos.map((video, index) => (
+      {/* Multiple Background Videos - Desktop Only */}
+      {!isMobile && videos.map((video, index) => (
         <video
           key={index}
           autoPlay
