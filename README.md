@@ -28,8 +28,6 @@ Actively taking on freelance projects and building:
 - Client sites for local businesses
 - Custom automation scripts for lead gen and CRM workflows
 
-Interning at **Classy Games Studios** as a Software Engineer while running my freelance business on the side.
-
 ## Need Something Built?
 
 I solve problems fast. If you need a website shipped, a workflow automated, or a technical problem solved:
