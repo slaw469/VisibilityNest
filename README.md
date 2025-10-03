@@ -1,18 +1,18 @@
 # Steven Law — Web & AI Automations
 
-**Building websites and AI automations that actually make money.**
+**Learning by building real solutions for real clients.**
 
-This is the landing page for my freelance business where I help companies ship faster with modern web development and intelligent automation solutions.
+This is the landing page for my freelance work where I help businesses with web development and automation while finishing my CS degree. Using client projects as a way to learn, grow my skills, and self-sustain.
 
 ## What I Do
 
-I take on **paid client work** building:
+I take on freelance projects building:
 
 - **High-performance websites** — Fast, modern, conversion-focused sites that actually generate leads
 - **AI-powered automations** — Custom workflows that save businesses 10+ hours/week
 - **Full-stack solutions** — End-to-end development from concept to deployment
 
-Currently working with clients while finishing my CS degree. Building real products, solving real problems, getting paid.
+Actively working with clients as a side income while finishing my degree. Every project is a learning opportunity to level up my technical skills and understand real-world business problems.
 
 ## Tech Stack
 
