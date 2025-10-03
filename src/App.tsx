@@ -1,28 +1,20 @@
-import React from 'react';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import FeaturedAgent from './components/FeaturedAgent';
-import FeaturedListings from './components/FeaturedListings';
-import ValueProposition from './components/ValueProposition';
-import Testimonials from './components/Testimonials';
-import FeaturedNeighborhoods from './components/FeaturedNeighborhoods';
-import Footer from './components/Footer';
-import FloatingContact from './components/FloatingContact';
+// File: src/App.tsx
+import Navigation from './components/Navigation';
+import HeroSection from './components/HeroSection';
+import ServicesSection from './components/ServicesSection';
+import ProcessSection from './components/ProcessSection';
+import ContactSection from './components/ContactSection';
+import FooterSection from './components/FooterSection';
 
 function App() {
   return (
-    <div className="min-h-screen bg-white">
-      <Header />
-      <div id="hero">
-        <Hero />
-      </div>
-      <FeaturedAgent />
-      <FeaturedListings />
-      <ValueProposition />
-      <Testimonials />
-      <FeaturedNeighborhoods />
-      <Footer />
-      <FloatingContact />
+    <div className="min-h-screen bg-background-light">
+      <Navigation />
+      <HeroSection />
+      <ServicesSection />
+      <ProcessSection />
+      <ContactSection />
+      <FooterSection />
     </div>
   );
 }
