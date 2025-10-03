@@ -24,7 +24,7 @@ Actively working with clients as a side income while finishing my degree. Every 
 ## Current Work
 
 Actively taking on freelance projects and building:
-- **Web Vitals Monitor** — Real-time performance analytics tracking 500+ websites
+- **Commitly** — Clean, conventional commits tool with CLI and web playground for enforcing commit message standards
 - Client sites for local businesses
 - Custom automation scripts for lead gen and CRM workflows
 
