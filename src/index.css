@@ -27,3 +27,24 @@
     @apply outline-none ring-2 ring-primary ring-offset-2;
   }
 }
+
+/* Motion-reduce utilities for video elements */
+@layer utilities {
+  @media (prefers-reduced-motion: reduce) {
+    .motion-reduce\:hidden {
+      display: none;
+    }
+    .motion-reduce\:block {
+      display: block;
+    }
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .motion-safe\:hidden {
+      display: none;
+    }
+    .motion-safe\:block {
+      display: block;
+    }
+  }
+}

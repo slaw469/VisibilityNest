@@ -11,10 +11,12 @@ export const SITE = {
   portfolio: "https://github.com/slaw469",
   email: "hello@yourdomain.com",
   
-  // Hero Media
+  // Hero Media - Optimized for performance
   hero: {
-    videoSrc: "/hero.mp4",        // Desktop only
-    posterSrc: "/hero-poster.jpg" // Used everywhere as fallback
+    videoSrc: "/hero.mp4",           // Desktop only, hidden on mobile
+    posterSrc: "/hero-poster.jpg",   // Poster for video + fallback
+    mobileSrc: "/hero-mobile.webp",  // Mobile optimized WebP (< 200KB)
+    desktopSrc: "/hero-desktop.webp" // Desktop WebP for motion-reduce users
   },
   
   // Services
