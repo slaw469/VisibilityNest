@@ -3,7 +3,7 @@ export const SITE = {
   tagline: "Websites & AI Automations that Actually Ship.",
   description: "I design, build, and automate so you get results faster.",
   
-  // External Links
+  // Links
   calendly: "https://calendly.com/stelaw469/15-minute-tech-strategy-call",
   linkedin: "https://www.linkedin.com/in/steven-law-b918b530b/",
   portfolio: "https://github.com/slaw469",
