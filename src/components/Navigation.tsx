@@ -1,4 +1,3 @@
-// File: src/components/Navigation.tsx
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { SITE } from '../site.config';

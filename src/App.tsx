@@ -1,4 +1,3 @@
-// File: src/App.tsx
 import Navigation from './components/Navigation';
 import HeroSection from './components/HeroSection';
 import ServicesSection from './components/ServicesSection';

@@ -1,5 +1,4 @@
-// File: src/components/ServicesSection.tsx
-import { Globe, Bot, TrendingUp } from 'lucide-react';
+import { Globe, Bot, TrendingUp} from 'lucide-react';
 import { SITE } from '../site.config';
 
 const ServicesSection = () => {

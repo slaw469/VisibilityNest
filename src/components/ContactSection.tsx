@@ -1,4 +1,3 @@
-// File: src/components/ContactSection.tsx
 import { useState } from 'react';
 import { Linkedin, Github, Calendar } from 'lucide-react';
 import { SITE } from '../site.config';
@@ -12,7 +11,6 @@ const ContactSection = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Contact Form Submission:', formData);
     alert('Thanks for reaching out! I\'ll get back to you soon.');
     setFormData({ name: '', email: '', message: '' });
   };

@@ -1,4 +1,3 @@
-// File: src/components/ProcessSection.tsx
 import { SITE } from '../site.config';
 
 const ProcessSection = () => {

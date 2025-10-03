@@ -1,4 +1,3 @@
-// File: src/components/FooterSection.tsx
 import { SITE } from '../site.config';
 
 const FooterSection = () => {
